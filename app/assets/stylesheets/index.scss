@@ -1,0 +1,77 @@
+/** 全体　**/
+body {
+  background: rgb(233, 229, 222);
+}
+
+/** ヘッダ　**/
+header .navbar {
+  background-color: #434343;
+}
+.sitetitle {
+  padding-left: 10px;;
+}
+
+/** カード要素　**/
+.card {
+  cursor: pointer;
+}
+.card-body {
+  padding: 0px;
+  margin: 5px 0;
+}
+.card-body.sitetitle {
+  padding-left: 10px;
+  color: rgb(85, 85, 85);
+}
+
+.hover {
+  position: relative;
+  width: 100%;
+}
+.zoom-in-img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+  cursor: pointer;
+}
+.zoom-in-img img {
+  width: 100%;
+  height: 100%;
+}
+.hover .hover-text {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0,0,0,0.65);
+  /*透明にして表示させない*/
+  opacity: 0;
+  /*ホバーの動き方*/
+  transition: .3s ease-in-out;
+}
+.hover .hover-text .text1 {
+  font-size: 22px;
+  padding: 10px 20px;
+}
+.hover .hover-text .text2 {
+  font-size: 16px;
+  padding: 0 20px;
+}
+
+/*ホバーエフェクト*/
+.zoom-in-img img {
+  transform: scale(1);
+  transition: .3s ease-in-out;
+}
+.hover:hover .zoom-in-img img {
+  transform: scale(1.1);
+}
+.hover:hover .hover-text {
+    /*不透明にして表示*/
+  opacity: 1;
+}
