@@ -2,5 +2,32 @@
   <%= stylesheet_link_tag 'index' %>
 <% end %>
 
+<div class="container">
+  <div class="col-sm-12 col-md-8 offset-md-2">
+    <div class="text-center">
+      <%= link_to "http://localhost:3001/tasks" do%>
+        <div class="btn btn-success">サイト一覧ページはこちら</div>
+      <% end %>
+
+      <div class="dropdown dropdown_techlist">
+        <button id="btnOpenMenu" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">技術ブログ選択</button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item active" href="https://gosho-techplay.hatenablog.com/archive/category/markdown" aria-current="true">markdown</a></li>
+          <li><a class="dropdown-item" href="#">HTML</a></li>
+          <li><a class="dropdown-item" href="#">CSS</a></li>
+          <li><a class="dropdown-item" href="#">JS</a></li>
+          <li><a class="dropdown-item" href="#">Node.js</a></li>
+          <li><a class="dropdown-item" href="#">Rails</a></li>
+          <li><a class="dropdown-item" href="#">Nginx</a></li>
+          <li><a class="dropdown-item" href="#">Docker</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="https://gosho-techplay.hatenablog.com/">すべて</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 <%= javascript_include_tag "index.js" %>
