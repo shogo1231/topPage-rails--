@@ -11,24 +11,28 @@
         <div class="content">
           <img src="/assets/attendance_20220911160900.png" width="100%">
         </div>
-        <div class="">
-          <p class="text2">同じ部屋にいる全ユーザーとチャットが楽しめるサイトです。</p>
+        <div>
+          <p class="text2">日々の出勤・退勤が登録・管理できるサイトです。</p>
         </div>
       </section>
-        <%= link_to  "https://gosho-techplay.com/attendance", title: '共有', target: '_blank' do%>
-          <div class="btn btn-c btn--green btn--cubic">サイトはこちら</div>
-        <% end %>
-      <h3>\share/</h3>
-      <span>
-        <%= link_to  "https://github.com/shogo1231/attendance", title: '共有', target: '_blank' do%>
-          <%= image_tag "/assets/gitHub_Social_Icon.png" ,:width => '70', :height => '70'%>
-        <% end %>
-      </span>
-      <span>
-        <%= link_to  "https://twitter.com/share?url=#{request.url}/&text=#{@shop}", title: '共有', target: '_blank' do%>
-          <%= image_tag "/assets/Twitter_Social_Icon_Circle_Color.png" ,:width => '70', :height => '70'%>
-        <% end %>
-      </span>
+      <%= link_to  "https://gosho-techplay.com/attendance" do%>
+        <div class="btn btn-outline-success gap-2 col-6 mx-auto">サイトはこちら</div>
+      <% end %>
+      <h3 class="disp_share">
+        <span>&#92;</span> share /
+      </h3>
+      <div class="shares">
+        <div class="share_git">
+          <%= link_to  "https://github.com/shogo1231/attendance" do%>
+            <%= image_tag "/assets/gitHub_Social_Icon.png", :width => '70', :height => '70'%>
+          <% end %>
+        </div>
+        <div class="share_twitter">
+          <%= link_to  "https://twitter.com/share?url=#{request.url}/&text=#{@shop}", title: '共有', target: '_blank' do%>
+            <%= image_tag "/assets/Twitter_Social_Icon_Circle_Color.png", :width => '70', :height => '70'%>
+          <% end %>
+        </div>
+      </div>
     </div>
   </div>
 </div>

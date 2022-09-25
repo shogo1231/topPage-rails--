@@ -39,3 +39,21 @@ btn-c:before {
   padding: 0;
   content: '\f054';
 }
+
+h3.disp_share {
+  margin: 20px 0 10px 0;
+  font-family: Arial;
+}
+
+.shares {
+  display: flex;
+  justify-content: center;
+}
+
+.share_git {
+  margin-right: 10px;
+}
+
+.share_twitter {
+  margin-left: 10px;
+}
