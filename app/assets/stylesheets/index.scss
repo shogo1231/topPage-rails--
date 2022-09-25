@@ -3,6 +3,27 @@ body {
   background: rgb(233, 229, 222);
 }
 
+/** フェードアップ **/
+.fadeUp{
+	opacity: 0;
+	animation-name: fadeUp;
+	animation-duration: 0.7s;
+	animation-timing-function: ease;
+	animation-delay: .25s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeUp{
+	0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 /** ヘッダ　**/
 header .navbar {
   background-color: #434343;
