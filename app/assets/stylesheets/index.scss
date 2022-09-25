@@ -33,14 +33,14 @@ header .navbar {
 }
 
 /** カード要素　**/
-.card {
+.card section {
   cursor: pointer;
 }
 .card-body {
   padding: 0px;
   margin: 5px 0;
 }
-.card-body.sitetitle {
+.card-body .detail {
   padding-left: 10px;
   color: rgb(85, 85, 85);
 }
