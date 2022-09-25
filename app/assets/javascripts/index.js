@@ -13,4 +13,9 @@ $(function () {
     let pathName = $('.card').attr('name');
     location.href = `https://gosho-techplay.com/${pathName}`;
   });
+
+  $('.sitetitle').on('click', (e) => {
+    e.preventDefault();
+    location.href = `http://localhost:3001/`;
+  })
 });

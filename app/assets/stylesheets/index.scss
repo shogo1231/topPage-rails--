@@ -97,6 +97,11 @@ header .navbar {
   opacity: 1;
 }
 
-.dropdown_techlist {
+.dropdown_techlist,
+.back_tasks {
   margin-top: 50px;
+}
+
+.sitetitle {
+  cursor: pointer;
 }

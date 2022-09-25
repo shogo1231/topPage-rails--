@@ -1,3 +1,9 @@
 <%= render 'details/' + @shop %>
 
+<div class="text-center back_tasks">
+  <%= link_to "http://localhost:3001/tasks" do%>
+    <div class="btn btn-secondary">サイト一覧ページに戻る</div>
+  <% end %>
+</div>
+
 <%= javascript_include_tag "index.js" %>
