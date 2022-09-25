@@ -1,0 +1,41 @@
+btn--green {
+  color: #fff;
+  background-color: #094;
+}
+
+btn--green:hover {
+  color: #fff;
+  background: #00a349;
+}
+
+btn--green.btn--cubic {
+  border-bottom: 5px solid #00662d;
+}
+
+btn--green.btn--cubic:hover {
+  margin-top: 3px;
+  border-bottom: 2px solid #00662d;
+}
+
+btn-c {
+  font-size: 2rem;
+  position: relative;
+  padding: 1.5rem 3rem 1.5rem 2rem;
+  border-radius: 100vh;
+}
+
+btn-c i.fa {
+  margin-right: 1rem;
+}
+
+btn-c:before {
+  font-family: 'Font Awesome 5 Free';
+  font-size: 1.6rem;
+  line-height: 1;
+  position: absolute;
+  top: calc(50% - .8rem);
+  right: 1rem;
+  margin: 0;
+  padding: 0;
+  content: '\f054';
+}
