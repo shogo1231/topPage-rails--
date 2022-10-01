@@ -23,6 +23,6 @@ $(function () {
 
   $('.sitetitle').on('click', (e) => {
     e.stopPropagation();
-    location.href = `http://localhost:3001/`;
+    location.href = `https://gosho-techplay.com/`;
   })
 });
